@@ -1,5 +1,3 @@
-// pages/api/deleteAllProjects.js
-
 import clientPromise from "../../lib/mongodb";
 
 export default async function handler(req, res) {
@@ -11,7 +9,6 @@ export default async function handler(req, res) {
     const client = await clientPromise;
     const db = client.db();
 
-    // Șterge toate proiectele
     await db.collection("projects").deleteMany({});
 
     res.status(200).json({ message: "Toate proiectele au fost șterse cu succes!" });
