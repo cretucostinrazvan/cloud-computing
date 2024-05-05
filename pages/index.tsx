@@ -72,7 +72,7 @@ export default function Home({ isConnected }: InferGetServerSidePropsType<typeof
         body: JSON.stringify({ 
           name: registerName, 
           details: registerDetails, 
-          deadline: new Date(registerDeadline), // Convertim data în tip Date
+          deadline: new Date(registerDeadline),
           priority: registerPriority 
         }),
       });
@@ -103,7 +103,7 @@ export default function Home({ isConnected }: InferGetServerSidePropsType<typeof
 
       if (response.ok) {
         setError("");
-        setProjects([]); // Șterge toate proiectele din starea locală
+        setProjects([]);
         alert("Toate proiectele au fost șterse cu succes!");
       } else {
         const data = await response.json();
