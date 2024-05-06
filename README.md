@@ -2,7 +2,7 @@ Titlu: Aplicație de manageriere a proiectelor personale
 Nume: Crețu
 Prenume: Costin-Răzvan
 Grupa: 1131
-- link video: 
+- link video: https://www.youtube.com/watch?v=rVJfBFCKhzg
 - link publicare: https://cloud-computing-nine.vercel.app/
 1. Introducere
 Această aplicație este un manager de proiecte care permite utilizatorilor să înregistreze, să vizualizeze și să șteargă proiecte.
